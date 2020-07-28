@@ -30,6 +30,5 @@ def authorization():
     print('\n\rAuthentication is complete. Please close this window.\n\r認証が完了しました。このウィンドウは閉じてください。\n\r')
     return name
 
-## おまじない
 if __name__ == "__main__":
     app.run(debug=False, host='0.0.0.0', port=12002)
