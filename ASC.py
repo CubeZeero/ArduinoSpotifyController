@@ -1,4 +1,5 @@
 
+import time
 import requests
 import serial
 import json
@@ -6,11 +7,9 @@ import sys
 import atexit
 import webbrowser
 
-'''comport_open = open('lib\ComPort.txt')
+comport_open = open('lib\ComPort.txt')
 comport = comport_open.read()
-comport_open.close'''
-
-comport = "COM11"
+comport_open.close
 
 PP_sw = 0
 R_sw = 0
