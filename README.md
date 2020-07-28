@@ -51,7 +51,7 @@ ArduinoIDEでArduinoへ書き込みを行ってください
 * Wire
 * Adafruit BusIO
 
-##コントローラー
+## コントローラー
 
 ![controller](https://github.com/CubeZeero/ArduinoSpotifyController/blob/master/img/controller.png)
 
