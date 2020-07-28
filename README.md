@@ -51,3 +51,29 @@ ArduinoIDEでArduinoへ書き込みを行ってください
 * Wire
 * Adafruit BusIO
 
+## コントローラー
+
+![controller](https://github.com/CubeZeero/ArduinoSpotifyController/blob/master/img/controller.png)
+
+* 1 - 再生 / 停止
+* 2 - 前の曲にスキップ
+* 3 - 次の曲へスキップ
+* 4 - リピートスイッチ
+* 5 - シャッフルスイッチ
+* 6 - ボリュームアップ(5%)
+* 7 - ボリュームダウン(5%)
+* 8 - ミュートスイッチ
+* 9 - 5秒次に移動
+* 10 - 10秒次に移動
+* 11 - 5秒前に移動
+* 12 - 10秒前に移動
+* 13 - 設定同期
+
+他のデバイスとプレイヤーの状態が異なる場合、設定同期で同期できます
+
+## Release
+Windowsのみ.exeとして配布しています
+[Release](https://github.com/CubeZeero/ArduinoSpotifyController/releases/)
+
+## License
+ArduinoSpotifyController is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
