@@ -70,3 +70,10 @@ ArduinoIDEでArduinoへ書き込みを行ってください
 * 13 - 設定同期
 
 他のデバイスとプレイヤーの状態が異なる場合、設定同期で同期できます
+
+## Release
+Windowsのみ.exeとして配布しています
+[Release](https://github.com/CubeZeero/ArduinoSpotifyController/releases/)
+
+## License
+ArduinoSpotifyController is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
