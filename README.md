@@ -52,6 +52,7 @@ ArduinoIDEでArduinoへ書き込みを行ってください
 * Adafruit BusIO
 
 ##コントローラー
+
 ![controller](https://github.com/CubeZeero/ArduinoSpotifyController/blob/master/img/controller.png)
 
 * 1 - 再生 / 停止
