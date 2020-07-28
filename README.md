@@ -14,7 +14,7 @@ ArduinoのTFTLCDからSpotifyを制御するためのツールです。
 * 10秒の前後シーク
 
 ## 確認済み動作環境
-Windows
+Windows 10 Home
 
 ## 使用するパーツ
 Arduino UNO R3
