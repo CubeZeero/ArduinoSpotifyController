@@ -71,7 +71,7 @@ ArduinoIDEでArduinoへ書き込みを行ってください
 
 他のデバイスとプレイヤーの状態が異なる場合、設定同期で同期できます
 
-## Release
+## Release ダウンロード
 Windowsのみ.exeとして配布しています
 [Release](https://github.com/CubeZeero/ArduinoSpotifyController/releases/)
 
