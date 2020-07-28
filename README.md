@@ -1,15 +1,23 @@
 # ArduinoSpotifyController
 This is a tool to control Spotify from Arduino TFT LCD.
+
 ArduinoのTFTLCDからSpotifyを制御するためのツールです。
 
 ## 機能
 ・再生 / 停止
+
 ・次 / 前 の曲へスキップ
+
 ・リピートスイッチ
+
 ・シャッフルスイッチ
+
 ・ボリューム変更
+
 ・ミュート
+
 ・5秒の前後シーク
+
 ・10秒の前後シーク
 
 ## 確認済み動作環境
@@ -32,6 +40,7 @@ LCDを使用する場合はレジスタを設定する必要があります
 
 レジスタを特定したら以下のコードを特定したレジスタに書き換えてください
 (Arduino_TFTLCDの373行目、setup内にあります)
+
 '''
 tft.begin(0x9341);
 '''
