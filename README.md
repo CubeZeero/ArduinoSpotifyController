@@ -27,15 +27,15 @@ https://is.gd/kgN2d
 
 **LCDについては2.8インチ推奨です**
 
-LCDを使用する場合はレジスタを設定する必要があります
-下記のページを参考にレジスタを特定してください
+LCDを使用する場合はドライバICの型番を設定する必要があります
+下記のページを参考に型番を特定してください
 [http://nopnop2002.webcrow.jp/Arduino-Hard/ArduinoTFTShield.html](http://nopnop2002.webcrow.jp/Arduino-Hard/ArduinoTFTShield.html)
 
-レジスタを特定したら以下のコードを特定したレジスタに書き換えてください
+型番を特定したら以下のコードを特定した型番に書き換えてください
 (Arduino_TFTLCDの373行目、setup内にあります)
 
 デフォルト値は**9341**です
-(上記のTFTLCDのレジスタです)
+(上記のTFTLCDの型番です)
 
 ```
 tft.begin(0x9341);
