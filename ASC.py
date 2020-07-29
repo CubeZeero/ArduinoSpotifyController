@@ -27,8 +27,8 @@ mute_sw = 0
 authorization_base_url = "https://accounts.spotify.com/authorize"
 token_url = "https://accounts.spotify.com/api/token"
 redirect_url = 'http://localhost:12002'
-client_id = r''
-client_secret = ''
+client_id = r'6a40b71a89764c9b9e3ee5766d4d7136'
+client_secret = '714981f6049f4f0db006c58756c4ed1b'
 
 scope = [
     "user-read-playback-state",
@@ -66,6 +66,8 @@ def checktoken():
                 headers = {'Authorization': 'Bearer '+ token}
                 PStatus = requests.get('https://api.spotify.com/v1/me',headers=headers)
                 PStatusJS = PStatus.json()
+
+checktoken();
 
 def sync_set():
 
@@ -108,8 +110,6 @@ def sync_set():
     ArduinoS.write(int(volume).to_bytes(1,'big'))
     time.sleep(0.8)
 
-checktoken();
-
 if str(PStatusJS["product"]) in 'free':
     print('Only available for premium accounts.')
     time.sleep(5)
@@ -137,6 +137,9 @@ except:
 def volume_set():
     global PStatusJS
     global volume
+    global PStatus
+    PStatus = requests.get('https://api.spotify.com/v1/me/player',headers=headers)
+    PStatusJS = PStatus.json()
     volume = int(PStatusJS['device']['volume_percent'])
     if volume > 0 and volume < 100:
         if volume <= 9:
@@ -181,6 +184,14 @@ print('Connected to ' + comport + '\n\r' + comport + 'に接続しました\n\r'
 while True:
 
     checktoken();
+
+    try:
+        PStatus = requests.get('https://api.spotify.com/v1/me/player',headers=headers)
+        PStatusJS = PStatus.json()
+    except:
+        print('You need to play the song in the Spotify player and activate it.\n\rSpotifyのプレイヤーで曲を再生しアクティブ状態にする必要があります')
+        time.sleep(5)
+        sys.exit()
 
     ArduinoRA = ArduinoS.read_all()
 
