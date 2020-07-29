@@ -72,6 +72,9 @@ checktoken();
 def sync_set():
 
     global PStatusJS
+    global PP_sw
+    global S_sw
+    global R_sw
 
     if str(PStatusJS["is_playing"]) in 'True':
         sendSetting = '0'
@@ -196,7 +199,7 @@ while True:
     ArduinoRA = ArduinoS.read_all()
 
     #responce = int.from_bytes(ArduinoRA,'big')
-    time.sleep(0.05)
+    time.sleep(0.2)
 
     if 'error' in PStatusJS.keys():
         checktoken()
