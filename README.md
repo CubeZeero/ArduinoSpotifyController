@@ -75,5 +75,8 @@ ArduinoIDEでArduinoへ書き込みを行ってください
 Windowsのみ.exeとして配布しています
 [Release](https://github.com/CubeZeero/ArduinoSpotifyController/releases/)
 
+## バグについて
+順次修正していく予定です
+
 ## License
 ArduinoSpotifyController is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
